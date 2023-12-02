@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel aluno</title>
+    <link rel="stylesheet" href="assets/nav_and_footer.css">
+    <link rel="stylesheet" href="assets/cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <main>
+        <section class="container_perfil">
+
+            <form method="POST" action="php/serven_cadastro.php" class="formulario">
+
+                <label for="nome">Nome *</label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="email">Email *</label>
+                <input type="email" name="email" id="email">
+
+                <label for="turma">Turma *</label>
+                <input type="text" name="turma" id="turma">
+
+                <label for="serie">Série *</label>
+                <input type="text" name="serie" id="serie">
+
+                <label for="anoLet">Início do ano letivo *</label>
+                <input type="date" name="anoLet" id="anoLet">
+
+                <label for="dataNasc">Data de Nascimento *</label>
+                <input type="date" name="dataNasc" id="dataNasc">
+
+                <label for="senha">Senha *</label>
+                <input type="password" name="senha" id="senha">
+
+                <label for="confirSenha">Confirmar Senha *</label>
+                <input type="password" name="confirSenha" id="confirSenha">
+
+
+
+                <button type="submit" class="btn">Cadastrar</button>
+            </form>
+
+
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

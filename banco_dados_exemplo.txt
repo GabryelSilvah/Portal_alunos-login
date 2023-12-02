@@ -1,0 +1,18 @@
+CREATE DATABASE portal_alunos;
+
+USE portal_alunos;
+
+create table usuarios(
+id int auto_increment,
+nome varchar(130) not null,
+email varchar(140) not null,
+turma varchar (20) not null,
+serie varchar(30) not null,
+inicio_ano_letivo date not null,
+dataNasc date not null,
+senha varchar(90) not null,
+confirSenha varchar(90) not null,
+primary key(id)
+);
+
+SELECT*FROM usuarios;

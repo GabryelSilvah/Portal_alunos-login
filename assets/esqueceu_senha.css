@@ -1,0 +1,35 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+label, p{
+    color: white;
+    font-family: 'Mulish', sans-serif;
+}
+input{
+    outline: 0;
+    border: 0;
+    padding: 3px;
+    border-radius: 50px;
+    width: 300px;
+    height: 20px;
+}
+
+.btn{
+    background-color: aquamarine;
+    border: 0;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'Mulish', sans-serif;
+    transition: 0.4s;
+}
+.btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    scale: 1.1;
+    cursor: pointer;
+    
+}
