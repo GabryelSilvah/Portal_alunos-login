@@ -1,25 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel aluno</title>
-    <link rel="stylesheet" href="assets/nav_and_footer.css">
-    <link rel="stylesheet" href="assets/cadastro.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="./public/css/cadastro.css">
 </head>
 
 <body>
-
-
     <main>
         <section class="container_perfil">
 
-            <form method="POST" action="php/serven_cadastro.php" class="formulario">
+            <form method="POST" action="cadastrar" class="formulario">
 
                 <label for="nome">Nome *</label>
                 <input type="text" name="nome" id="nome">
@@ -53,6 +40,30 @@
 
 
         </section>
+
+        <div>
+            <?php
+            require_once("./app/view/view.php");
+            class Notificacao
+            {
+
+                public function resposta($mensagem)
+                {
+                   if($mensagem == "inexistentes"){
+                    echo"Preencha todos os campos";
+                   }else if($mensagem == "diferentes"){
+                    echo"As senhas são diferentes";
+                   }else if($mensagem == "existe"){
+                    echo"Já existe um cadastro com esse email";
+                   }else if($mensagem == "sucesso"){
+                    echo"Usuário cadastrado com sucesso!";
+                   }
+                  
+                }
+            }
+
+            ?>.
+        </div>
 
     </main>
 
