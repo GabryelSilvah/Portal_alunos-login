@@ -1,8 +1,9 @@
 <nav>
     <ul class="menu">
-        <li><a href="home.php">Home</a></li>
-        <li> <a href="status.php">Status</a></li>
-        <li>Notas gerais</li>
-        <li><a href="perfil.php">Perfil</a></li>
+        <li><a href="home">Home</a></li>
+        <li> <a href="status">Status</a></li>
+        <li><a href="Notas">Notas gerais</a></li>
+        <li><a href="perfil">Perfil</a></li>
+        <li><a href="sair">sair</a></li>
     </ul>
 </nav>

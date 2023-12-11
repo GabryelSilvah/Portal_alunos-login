@@ -1,19 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Aluno</title>
+    <link rel="stylesheet" href="public/css/nav_and_footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+</head>
+
 <?php
-include_once("./app/controller/controller.php");
-$url = isset($_GET['url']) ? $_GET['url'] : $url = "login";
+session_start();
+require_once("./core/rotas.php");
 
-
-if ($url == "login") {
-    require_once("./app/view/login.php");
-} else if($url == "cadastro"){
-    require_once("./app/view/cadastro.php");
-}
-else if ($url == "cadastrar") {
-    $controller = new Controller;
-    $controller = $controller->controllerCadastro();
-} else if ($url == "logar") {
-    $controller = new Controller;
-    $controller = $controller->receberLogin();
-} else {
-    require_once("./app/view/login.php");
-}
+$router = new Router;

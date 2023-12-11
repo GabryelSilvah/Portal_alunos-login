@@ -1,35 +1,28 @@
 <?php
 
-include_once("./app/config/conexao.php");
-
 class Model
 {
 
     public function validacaoLogin($email, $senha)
     {
-        session_start();
+            
         $con = BancoDados::conexao();
 
         //pesquisa por usuário no banco de dados
-        $query = mysqli_query($con, "SELECT email FROM usuarios WHERE email = '$email' and senha = md5('$senha')");
+        $query = mysqli_query($con, "SELECT * FROM usuarios WHERE email = '$email' and senha = md5('$senha')");
         $rows = mysqli_num_rows($query);
 
         //fazer teste de autenticação de dados digitados no input com os dados do db mysql
         if ($rows > 0) {
 
             //armazena o usuario e a senha na session
-            $_SESSION['usuario2'] = $email;
-            $_SESSION['senha2'] = $senha;
+            $_SESSION['email'] = $email;
+            $_SESSION['senha'] = $senha;
 
-            if ($_SESSION['usuario2'] == true && $_SESSION['senha2'] == true) {
-                return "home";
-            } else {
-
-                return "login";
-            }
+            return true;
         } else {
-
-            return "login";
+                    
+            return false;
         }
     }
 

@@ -1,10 +1,10 @@
 <?php
 
-class Controller
+class Login
 {
  
 
-  public function receberLogin()
+  public function logar()
   {
     
     $_GET['url'] = "home";
@@ -20,12 +20,12 @@ class Controller
       $model = $model->validacaoLogin($email, $senha);
 
 
-      //enviar pra home
+      //enviar pra view
+        //enviar pra home
       if($model == true)
     {
-      header('location: http://localhost/sistema_login_mvc/home');
+      header('location: http://localhost/sistema_login_mvc/portal/home');
     }
-      
     }
   }
 

@@ -1,23 +1,26 @@
 <?php
-include_once("./public/templates/estrutura_html.php");
-$controller = new Controller;
-$controller = $controller->receberLogin();
+if (isset($_SESSION['email'])) {
+    require_once("./app/view/portal_alunos.php");
+    exit;
+}
 ?>
+
 <head>
     <link rel="stylesheet" href="./public/css/pagina_login.css">
 </head>
+
 <body>
     <main>
         <section class="container_login">
 
-            <form method="post" action="logar">
+            <form method="post" action="login/logar">
                 <div class="login">
                     <img id="img_login" src="./public/icones/usuario_login.png" alt="">
                 </div>
 
                 <div class="login">
                     <label for="usuario">Usuário:</label>
-                    <input required type="email" name="usuario" id="usuario">
+                    <input required type="email" name="email" id="usuario">
                 </div>
 
                 <div class="login">
@@ -37,14 +40,14 @@ $controller = $controller->receberLogin();
                 <p id="senha"><a href="redefinir_senha">Esqueceu sua senha?</a></p>
             </div>
         </section>
-        
+
         <div class="notificacao">
 
 
         </div>
-       
+
     </main>
-    
+
 </body>
 
 </html>
