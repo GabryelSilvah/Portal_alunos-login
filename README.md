@@ -5,8 +5,7 @@ Esse projeto está sendo construído utilizando a arquitetura MVC na linguagem p
 ## Sobre o projeto
 O objetivo desse projeto é ser um portal para acesso de estudantes de instituições de ensino. O sistema conta 
 com página de login onde o usuário pode realizar o acesso no portal, fazer um novo cadastro ou redefinir a senha.
-Após acessar o sistema o redireciona para o home inicial do portal é feito. Nele ficam disponíveis as disciplinas matriculadas. Através da barra de menu é possível navegar em outras abas, como, por exemplo, o perfil do usuário onde mostra todas as informações cadastradas
-com a possibilidade de alterar essas informações através do botão (atualizar dados).
+Após validado o acessar ao sistema, é feito o redirecionamento para o home inicial do portal. Nele ficam disponíveis as disciplinas matriculadas. Através da barra de menu é possível navegar em outras abas, como, por exemplo, o perfil do usuário onde mostra todas as informações cadastradas com a possibilidade de alterar essas informações através do botão (atualizar dados).
 
 ## O que se propõe a fazer até o fim do projeto
 - Todas as funcionalidades do CRUD devem ser implementadas
