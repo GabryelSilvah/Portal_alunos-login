@@ -33,5 +33,5 @@ Após validado o acessar ao sistema, é feito o redirecionamento para o home ini
 - PHP
 - Javascript
 - MySql
-- html
-- css
+- Html
+- Css
