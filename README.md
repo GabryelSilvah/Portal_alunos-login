@@ -8,6 +8,7 @@ com página de login onde o usuário pode realizar o acesso no portal, fazer um 
 Após validado o acessar ao sistema, é feito o redirecionamento para o home inicial do portal. Nele ficam disponíveis as disciplinas matriculadas. Através da barra de menu é possível navegar em outras abas, como, por exemplo, o perfil do usuário onde mostra todas as informações cadastradas com a possibilidade de alterar essas informações através do botão (atualizar dados).
 
 <div style="width:100%;display:flex;justify-content:center;">
+  
 <img style="width:300px" src="https://github.com/GabryelSilvah/Sistema_de_login-Portal_alunos/assets/139282381/01e7de87-eb21-458e-8c8c-0640c389eab0">
 
   <img style="width:300px" src="https://github.com/GabryelSilvah/Sistema_de_login-Portal_alunos/assets/139282381/71c740fb-00e1-43f7-8d2a-0fcd79b27cb5">
@@ -16,7 +17,7 @@ Após validado o acessar ao sistema, é feito o redirecionamento para o home ini
   
   <img style="width:300px" src="https://github.com/GabryelSilvah/Sistema_de_login-Portal_alunos/assets/139282381/310a45dc-67d2-4d70-8710-2604e4ea32f3">
 
-   <img style="width:300px" src="(https://github.com/GabryelSilvah/Sistema_de_login-Portal_alunos/assets/139282381/4893f2b3-7807-4016-916c-9543cb7e2a5b">
+   <img style="width:300px" src="https://github.com/GabryelSilvah/Sistema_de_login-Portal_alunos/assets/139282381/4893f2b3-7807-4016-916c-9543cb7e2a5b">
 
   
 </div>
