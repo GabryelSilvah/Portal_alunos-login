@@ -1,15 +1,10 @@
-<?php
-if (!isset($_SESSION['email'])) {
-    require_once("./app/view/login.php");
-     exit;
- }
-
- require("./public/templates/nav.php");
-?>
 <head>
     <link rel="stylesheet" href="../public/css/nav_and_footer.css">
-<link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
 </head>
+<?php
+require("./public/templates/nav.php");
+?>
 
 <body>
 
@@ -18,7 +13,7 @@ if (!isset($_SESSION['email'])) {
             <a href="disciplinas/matematica.html">
                 <div class="disciplina">
                     <img class="banner_disc" src="../public/img/banner_disc.png" alt="">
-                    <h3>Matemática</h3>
+                    <h3>Matemática Coputcional</h3>
                     <p>Professor:</p>
                 </div>
             </a>
@@ -26,7 +21,7 @@ if (!isset($_SESSION['email'])) {
             <a href="disciplinas/portugues.html">
                 <div class="disciplina">
                     <img class="banner_disc" src="../public/img/banner_disc.png" alt="">
-                    <h3>Português</h3>
+                    <h3>Lógica de Programação</h3>
                     <p>Professor:</p>
                 </div>
             </a>
@@ -34,7 +29,7 @@ if (!isset($_SESSION['email'])) {
             <a href="disciplinas/geografia.html">
                 <div class="disciplina">
                     <img class="banner_disc" src="../public/img/banner_disc.png" alt="">
-                    <h3>Geografia</h3>
+                    <h3>Introdução a computação</h3>
                     <p>Professor:</p>
                 </div>
             </a>
@@ -42,7 +37,7 @@ if (!isset($_SESSION['email'])) {
             <a href="disciplinas/ciencia.html">
                 <div class="disciplina">
                     <img class="banner_disc" src="../public/img/banner_disc.png" alt="">
-                    <h3>Ciências</h3>
+                    <h3>Padrões Web</h3>
                     <p>Professor:</p>
                 </div>
             </a>

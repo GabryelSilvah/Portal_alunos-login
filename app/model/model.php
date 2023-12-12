@@ -5,7 +5,7 @@ class Model
 
     public function validacaoLogin($email, $senha)
     {
-            
+
         $con = BancoDados::conexao();
 
         //pesquisa por usuário no banco de dados
@@ -21,7 +21,7 @@ class Model
 
             return true;
         } else {
-                    
+
             return false;
         }
     }
@@ -29,14 +29,13 @@ class Model
     public function cadastrar(
         $nome,
         $email,
-        $turma,
-        $serie,
+        $curso,
+        $periodo,
         $anoLet,
         $dataNasc,
         $senha,
         $confirSenha
     ) {
-
 
         $con = BancoDados::conexao();
 
@@ -48,11 +47,11 @@ class Model
             return "existem";
         } else {
             if ($senha === $confirSenha) {
-                $adicionar = mysqli_query($con, "INSERT INTO usuarios (id,nome,email,turma,serie,inicio_ano_letivo,dataNasc,senha,confirSenha) 
-            VALUES ('','$nome','$email','$turma','$serie','$anoLet','$dataNasc','$senha','$confirSenha')");
-                return "sucesso";
+                $adicionar = mysqli_query($con, "INSERT INTO usuarios (id,nome,email,curso,periodo,inicio_ano_letivo,dataNasc,senha,confirSenha) 
+            VALUES ('','$nome','$email','$curso','$periodo','$anoLet','$dataNasc','$senha','$confirSenha')");
+                $_SESSION['msg_cadastro'] = "Cadastrado com Sucesso!";
             } else {
-                return "diferentes";
+                $_SESSION['msg_cadastro'] = "As senhas são diferentes.";
             }
         }
 

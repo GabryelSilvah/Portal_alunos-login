@@ -2,9 +2,14 @@
 $perfilModel = new perfilModel;
 $linha = $perfilModel->exibirDadosUsuario();
 ?>
+
 <head>
-    <link rel="stylesheet" href="./public/css/perfil.css">
+    <link rel="stylesheet" href="<?php echo http ?>./public/css/nav_and_footer.css">
+    <link rel="stylesheet" href="<?php echo http ?>./public/css/perfil.css">
 </head>
+<?php
+require("./public/templates/nav.php");
+?>
 
 <body>
     <main>
@@ -16,18 +21,19 @@ $linha = $perfilModel->exibirDadosUsuario();
             <label for="">Email:</label><br>
             <p> <?php echo $linha['email']; ?> </p><br>
 
-            <label for="">Turma:</label><br>
-            <p> <?php echo $linha['turma']; ?> </p><br>
-
-            <label for="">Serie:</label><br>
-            <p> <?php echo $linha['serie']; ?> </p><br>
-
-            <label for="">Ano letivo:</label><br>
-            <p> <?php echo $linha['inicio_ano_letivo']; ?> </p><br>
-
             <label for="">Data de Nascimento:</label>
             <p> <?php echo $linha['dataNasc']; ?> </p>
 
+            <label for="">Curso:</label><br>
+            <p> <?php echo $linha['curso']; ?> </p><br>
+
+            <label for="">Período:</label><br>
+            <p> <?php echo $linha['periodo']; ?> </p><br>
+
+            <label for="">Início do curso:</label><br>
+            <p> <?php echo $linha['inicio_ano_letivo']; ?> </p><br>
+
+<button>Atualizar dados</button>
         </section>
 
     </main>

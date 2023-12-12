@@ -1,12 +1,12 @@
 <head>
-    <link rel="stylesheet" href="./public/css/cadastro.css">
+    <link rel="stylesheet" href="<?php echo http ?>/public/css/cadastro.css">
 </head>
 
 <body>
     <main>
         <section class="container_perfil">
 
-            <form method="POST" action="cadastrar" class="formulario">
+            <form method="POST" action="<?php echo http ?>login/cadastro" class="formulario">
 
                 <label for="nome">Nome *</label>
                 <input type="text" name="nome" id="nome">
@@ -14,11 +14,11 @@
                 <label for="email">Email *</label>
                 <input type="email" name="email" id="email">
 
-                <label for="turma">Turma *</label>
-                <input type="text" name="turma" id="turma">
+                <label for="turma">Curso *</label>
+                <input type="text" name="curso" id="turma">
 
-                <label for="serie">Série *</label>
-                <input type="text" name="serie" id="serie">
+                <label for="serie">Período *</label>
+                <input type="text" name="periodo" id="serie">
 
                 <label for="anoLet">Início do ano letivo *</label>
                 <input type="date" name="anoLet" id="anoLet">
@@ -43,25 +43,10 @@
 
         <div>
             <?php
-            class Notificacao
-            {
-
-                public function resposta($mensagem)
-                {
-                   if($mensagem == "inexistentes"){
-                    echo"Preencha todos os campos";
-                   }else if($mensagem == "diferentes"){
-                    echo"As senhas são diferentes";
-                   }else if($mensagem == "existe"){
-                    echo"Já existe um cadastro com esse email";
-                   }else if($mensagem == "sucesso"){
-                    echo"Usuário cadastrado com sucesso!";
-                   }
-                  
-                }
+            if (!empty($_SESSION['msg_cadastro'])) {
+                echo $_SESSION['msg_cadastro'];
             }
-
-            ?>.
+            ?>
         </div>
 
     </main>

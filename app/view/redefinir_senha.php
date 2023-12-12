@@ -1,7 +1,6 @@
-
 <head>
-<link rel="stylesheet" href="./public/css/esqueceu_senha.css">
-<link rel="stylesheet" href="./public/css/pagina_login.css">
+<link rel="stylesheet" href="<?php echo http?>./public/css/esqueceu_senha.css">
+<link rel="stylesheet" href="<?php echo http?>./public/css/pagina_login.css">
 </head>
 <body>
     <form action="" class="formulario">

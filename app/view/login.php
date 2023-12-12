@@ -1,21 +1,22 @@
 <?php
 if (isset($_SESSION['email'])) {
-    require_once("./app/view/portal_alunos.php");
+    header(redirecionar.'portal/home');
     exit;
 }
 ?>
 
 <head>
-    <link rel="stylesheet" href="./public/css/pagina_login.css">
-</head>
+    <link rel="stylesheet" href="<?php echo http?>/public/css/pagina_login.css">
+</head> 
+
 
 <body>
     <main>
         <section class="container_login">
 
-            <form method="post" action="login/logar">
+            <form method="post" action="<?php echo http?>login/logar">
                 <div class="login">
-                    <img id="img_login" src="./public/icones/usuario_login.png" alt="">
+                    <img id="img_login" src="<?php echo http?>/public/icones/usuario_login.png" alt="">
                 </div>
 
                 <div class="login">
@@ -36,8 +37,8 @@ if (isset($_SESSION['email'])) {
             </form>
 
             <div class="login">
-                <p id="senha"><a href="cadastro">Não possui conta? cadastre-se.</a></p>
-                <p id="senha"><a href="redefinir_senha">Esqueceu sua senha?</a></p>
+                <p id="senha"><a href="<?php echo http ?>Site/cadastro">Não possui conta? cadastre-se.</a></p>
+                <p id="senha"><a href="<?php echo http ?>Site/redefinir_senha">Esqueceu sua senha?</a></p>
             </div>
         </section>
 

@@ -1,8 +1,12 @@
 <?php
-require_once("./app/controller/controller.php");
-require_once("./app/model/sair.php");
-$controller = new Controller;
+//configurações localhost
+define("http", "http://localhost/sistema_login_mvc/");
+define("redirecionar","location: http://localhost/sistema_login_mvc/");
 
-define('logar', $controller->receberLogin());
-$teste = new sairModel;
-define('logout',$teste);
+//configurações online
+// define("http", "http://portal-alunos.free.nf/");
+// define("redirecionar","location: http://portal-alunos.free.nf/");
+
+
+
+

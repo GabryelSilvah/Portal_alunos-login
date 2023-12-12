@@ -4,6 +4,6 @@
         <li> <a href="status">Status</a></li>
         <li><a href="Notas">Notas gerais</a></li>
         <li><a href="perfil">Perfil</a></li>
-        <li><a href="sair">sair</a></li>
+        <li><a href="logout">Logout</a></li>
     </ul>
 </nav>
