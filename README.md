@@ -12,8 +12,6 @@ Após validado o acessar ao sistema, é feito o redirecionamento para o home ini
 <img style="width:300px" src="https://github.com/GabryelSilvah/Sistema_de_login-Portal_alunos/assets/139282381/01e7de87-eb21-458e-8c8c-0640c389eab0">
 
   <img style="width:300px" src="https://github.com/GabryelSilvah/Sistema_de_login-Portal_alunos/assets/139282381/71c740fb-00e1-43f7-8d2a-0fcd79b27cb5">
-
-  <img style="width:300px" src="https://github.com/GabryelSilvah/Sistema_de_login-Portal_alunos/assets/139282381/6ccc8e97-8c6f-4fd6-bde2-8c868ee83b1d"> 
   
   <img style="width:300px" src="https://github.com/GabryelSilvah/Sistema_de_login-Portal_alunos/assets/139282381/310a45dc-67d2-4d70-8710-2604e4ea32f3">
 
