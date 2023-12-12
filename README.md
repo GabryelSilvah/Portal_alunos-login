@@ -28,4 +28,10 @@ Após validado o acessar ao sistema, é feito o redirecionamento para o home ini
 - Todas as funcionalidades do CRUD devem ser implementadas
 - Proteção contra sql injection deve ser implementada
 - Melhor estruturação das tabelas no MySql
-  
+
+## Tecnologias usadas
+-PHP
+-Javascript
+-MySql
+-html
+-css
