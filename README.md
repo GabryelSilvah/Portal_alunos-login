@@ -1,6 +1,7 @@
 # Portal_alunos/login
 
 > Status: em desenvolvimento
+> [Site](http://portal-alunos.free.nf/)
 
 ## Como está sendo feito
 Esse projeto está sendo construído utilizando a arquitetura MVC na linguagem php. O .htaccess foi utilizado para iniciar a criação da url amigável. Também está sendo implementado router para sistema de rotas. O MySql é SGBD utilizado para gerenciar o banco sql da aplicação. A configuração de conexão utilizada foi o mysqli com possibilidade de alteração para o estilo PDO futuramente.
