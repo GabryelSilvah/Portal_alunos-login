@@ -30,8 +30,8 @@ Após validado o acessar ao sistema, é feito o redirecionamento para o home ini
 - Melhor estruturação das tabelas no MySql
 
 ## Tecnologias usadas
--PHP
--Javascript
--MySql
--html
--css
+- PHP
+- Javascript
+- MySql
+- html
+- css
