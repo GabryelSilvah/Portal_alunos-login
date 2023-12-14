@@ -16,7 +16,7 @@ Como esse é um projeto simples, apenas para simular um portal de alunos, inicia
 
 <div style="width:100vw;display:flex;justify-content:center; gap:10px;flex-wrap:wrap;">
   
-<img style="width:300px;"  src="https://github.com/GabryelSilvah/7DaysOfCode/assets/139282381/254c78d6-3340-47c3-ad81-76c2a1fa5305">
+<img style="width:300px;"  src="https://github.com/GabryelSilvah/7DaysOfCode/assets/139282381/3ca2108c-d059-444a-b218-a470cde35bb6">
 
   <img style="width:300px" src="https://github.com/GabryelSilvah/Sistema_de_login-Portal_alunos/assets/139282381/71c740fb-00e1-43f7-8d2a-0fcd79b27cb5">
   
