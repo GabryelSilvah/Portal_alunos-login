@@ -4,7 +4,7 @@
 > [Site](http://portal-alunos.free.nf/)
 
 ## Sobre
-Esse projeto visa criar um sistema de auteticação de usuário, que se for validado terá acesso ao portal do aluno onde é possivel visualizar as matérias matriculadas, ver o status das notas, visualizar as informações cadastradas, editar essas informações, fazer logout na conta ou deletar essa conta.
+Esse projeto visa criar um sistema de autenticação de usuário, que se for validado terá acesso ao portal do aluno onde é possível visualizar as matérias matriculadas, ver o status das notas, visualizar as informações cadastradas, editar essas informações, fazer logout na conta ou deletar essa conta. Voltando na parte de login é possível ter acesso a duas outras funcionalidades, redefinir a senha caso tenha esquecido e cadastrar um novo usuário. Sobre essa última funcionalidade eu falo um pouco mais no tópico (área de cadastro).
 
 ## Como está sendo feito
 Esse projeto está sendo construído utilizando a arquitetura MVC na linguagem php. O .htaccess foi utilizado para iniciar a criação da url amigável. Também está sendo implementado router para sistema de rotas. O MySql é SGBD utilizado para gerenciar o banco sql da aplicação. A configuração de conexão utilizada foi o mysqli com possibilidade de alteração para o estilo PDO futuramente. 
