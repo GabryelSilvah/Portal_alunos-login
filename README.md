@@ -12,10 +12,7 @@ Esse projeto está sendo construído utilizando a arquitetura MVC na linguagem p
 ## Área de cadastro
 Como esse é um projeto simples, apenas para simular um portal de alunos, inicialmente a área de cadastro está na página de login. Claramente em um projeto real de portal de alunos essa parte de cadastro não fica disponível para que qualquer pessoa faça o cadastro na plataforma. Nesses casos um cadastro provisório é feito para que o aluno possa fazer o primeiro acesso e modificar a senha posteriomente. O motivo que me levou a deixar o cadastro disponível a todos é com víeis de ser possível "passear" pela plataforma e entender o objetivo principal do projeto.
 
-## Sobre o projeto
-O objetivo desse projeto é ser um portal para acesso de estudantes de instituições de ensino. O sistema conta 
-com página de login onde o usuário pode realizar o acesso no portal, fazer um novo cadastro ou redefinir a senha.
-Após validado o acessar ao sistema, é feito o redirecionamento para o home inicial do portal. Nele ficam disponíveis as disciplinas matriculadas. Através da barra de menu é possível navegar em outras abas, como, por exemplo, o perfil do usuário onde mostra todas as informações cadastradas com a possibilidade de alterar essas informações através do botão (atualizar dados).
+
 
 <div style="width:100vw;display:flex;justify-content:center; gap:10px;flex-wrap:wrap;">
   
